@@ -1,0 +1,25 @@
+# Copy this file to  config/application.properties  and fill in YOUR values.
+# config/application.properties is git-ignored and must never be shared or zipped.
+# Any value can instead come from an environment variable (shown in brackets).
+
+# [PDS_DB_URL]   JDBC URL of the MySQL server and database
+db.url=jdbc:mysql://localhost:3306/petsa_de_sweldo?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=utf8
+# [PDS_DB_USER]
+db.user=YOUR_MYSQL_USER
+# [PDS_DB_PASSWORD]
+db.password=YOUR_MYSQL_PASSWORD
+
+# API listens on this address/port. Keep 127.0.0.1 unless you really need LAN access.
+server.host=127.0.0.1
+server.port=8080
+
+# Browser origins allowed to call state-changing endpoints (comma separated).
+server.allowedOrigins=http://localhost:8443,http://127.0.0.1:8443,http://localhost:5173,http://127.0.0.1:5173
+
+# Set to true when the site is served over HTTPS so the session cookie is Secure.
+server.cookieSecure=false
+
+# Time zone used for attendance dates/times and pay periods.
+app.timezone=Asia/Manila
+# Login session lifetime in hours.
+session.hours=8

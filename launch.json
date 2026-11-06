@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Petsa de Sweldo API",
+      "request": "launch",
+      "mainClass": "com.petsa.Main",
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "java",
+      "name": "Create System Admin login (prompts for password)",
+      "request": "launch",
+      "mainClass": "com.petsa.tools.ManageUsers",
+      "args": "create-admin ADMIN-001 \"Administrator\"",
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "java",
+      "name": "Create finance login (prompts for password)",
+      "request": "launch",
+      "mainClass": "com.petsa.tools.ManageUsers",
+      "args": "create-finance FIN-001 \"Finance Admin\"",
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal"
+    }
+  ]
+}
